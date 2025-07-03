@@ -32,6 +32,7 @@ export async function GET(request: Request) {
 
   const params = new URLSearchParams();
   params.append('client_id', CLIENT_ID);
+  console.log(REDIRECT_URI)
   params.append('client_secret', CLIENT_SECRET);
   params.append('grant_type', 'authorization_code');
   params.append('code', code);
